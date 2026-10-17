@@ -25,7 +25,7 @@ ERPs in the ventral temporal lobe, particularly the face-selective "N200" or "N1
 
 Raw voltage traces were high-pass filtered at 0.5 Hz to remove slow drift, epoch-locked to stimulus onset (-200 to 500 ms), and baseline-corrected. Trials were categorized by behavioral response (Perceived vs. Not Perceived) and stratified across three custom noise bins: Low (0–30%), Medium (35–65%), and High (70–100%).
 
-![Ventral Temporal ERP](/home/mamzi/Desktop/neuro-connect/cortious-team-final-research-project/ERP/ventral-temporal-erp.jpg)
+![Ventral Temporal ERP](https://github.com/imMAMZI/cortious-team-final-research-project/blob/main/ERP/ventral-temporal-erp.jpg)
 **Observations:** This plot illustrates the grand-average ERP for face trials, grouped by behavioral outcome (Perceived vs. Not Perceived) across all noise levels. A pronounced negative deflection is observed within the 200–280 ms window for perceived faces (blue), within the latency range typically associated with face-sensitive N170/N200 responses. In comparison, trials in which participants did not report perceiving a face (red) show a noticeably attenuated response. This pattern suggests that ERP amplitude in this time window may be associated with behavioral reports of face perception, beyond the mere presentation of a face stimulus.
 
 ![Grand Average ERP Across Noise Bins](/home/mamzi/Desktop/neuro-connect/cortious-team-final-research-project/ERP/grand-average-ventral-temporal-erp.jpg)
