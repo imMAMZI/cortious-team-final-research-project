@@ -28,10 +28,10 @@ Raw voltage traces were high-pass filtered at 0.5 Hz to remove slow drift, epoch
 ![Ventral Temporal ERP](https://github.com/imMAMZI/cortious-team-final-research-project/blob/main/ERP/ventral-temporal-erp.jpg)
 **Observations:** This plot illustrates the grand-average ERP for face trials, grouped by behavioral outcome (Perceived vs. Not Perceived) across all noise levels. A pronounced negative deflection is observed within the 200–280 ms window for perceived faces (blue), within the latency range typically associated with face-sensitive N170/N200 responses. In comparison, trials in which participants did not report perceiving a face (red) show a noticeably attenuated response. This pattern suggests that ERP amplitude in this time window may be associated with behavioral reports of face perception, beyond the mere presentation of a face stimulus.
 
-![Grand Average ERP Across Noise Bins](/home/mamzi/Desktop/neuro-connect/cortious-team-final-research-project/ERP/grand-average-ventral-temporal-erp.jpg)
+![Grand Average ERP Across Noise Bins](https://github.com/imMAMZI/cortious-team-final-research-project/blob/main/ERP/grand-average-ventral-temporal-erp.jpg)
 **Observations:** By stratifying the ERPs across visual noise bins, we observe the parametric degradation of the feed-forward signal. In the Low Noise (0-30%) bin, the divergence between Perceived and Not Perceived trials is massive. In the Medium Noise (35-65%) bin—approaching the psychophysical threshold—the N170 amplitude is significantly blunted, yet a discernible difference between Hits and Misses remains. In the High Noise (70-100%) bin, the signal collapses, reflecting a failure of sensory evidence accumulation, aligning with the behavioral inability to detect faces.
 
-![Balanced Grand Average ERP](/home/mamzi/Desktop/neuro-connect/cortious-team-final-research-project/ERP/balanced-grand-average-erp.jpg)
+![Balanced Grand Average ERP](https://github.com/imMAMZI/cortious-team-final-research-project/blob/main/ERP/balanced-grand-average-erp.jpg)
 **Observations:** To ensure the amplitude differences observed above were not statistical artifacts of imbalanced trial counts (e.g., very few "Misses" in Low Noise, very few "Hits" in High Noise), this plot utilizes strict within-subject, within-bin random subsampling to equalize trial counts. The preservation of the N170 amplitude divergence in the Low and Medium noise bins confirms that the neural signature of conscious perception is robust and independent of sample size disparities.
 
 ---
@@ -49,16 +49,16 @@ We implemented a 5-fold Stratified Cross-Validation LDA using the `lsqr` solver 
 1. **Static Window:** Averaging features over a predefined physiological window (e.g., 200-280 ms for ERP, 100-400 ms for Broadband).
 2. **Time-Resolved:** A sliding 20 ms window to track decoding accuracy over the trial timecourse.
 
-![Whole Data Static LDA](/home/mamzi/Desktop/neuro-connect/cortious-team-final-research-project/LDA/whole_data_3bins_static_lda.png)
+![Whole Data Static LDA](https://github.com/imMAMZI/cortious-team-final-research-project/blob/main/LDA/whole_data_3bins_static_lda.png)
 **Observations:** This plot displays the static LDA decoding accuracy using raw voltage features across all electrodes. Decoding accuracy drops parametrically from ~65-70% in the Low Noise bin to theoretical chance (50%) in the High Noise bin. The Grand Average (crimson) perfectly mirrors the behavioral psychometric curve, demonstrating that the linear separability of the raw voltage brain state degrades proportionally with visual noise.
 
-![Whole Data Time-Resolved LDA](/home/mamzi/Desktop/neuro-connect/cortious-team-final-research-project/LDA/whole_data_3bins_time_resolved_lda.png)
+![Whole Data Time-Resolved LDA](https://github.com/imMAMZI/cortious-team-final-research-project/blob/main/LDA/whole_data_3bins_time_resolved_lda.png)
 **Observations:** The time-resolved LDA on raw voltage reveals the precise temporal dynamics of perceptual decoding. For Low Noise (blue), decoding accuracy sharply peaks at ~68% exactly within the N170 window (200-280 ms), reflecting the synchronized feed-forward sweep. Medium (orange) and High (red) noise levels fail to achieve significant decoding accuracy at any time point, indicating that visual degradation destroys the temporal phase-locking required for voltage-based classification.
 
-![Broadband Perceived Static LDA](/home/mamzi/Desktop/neuro-connect/cortious-team-final-research-project/LDA/broadband_perceived_static_lda.png)
+![Broadband Perceived Static LDA](https://github.com/imMAMZI/cortious-team-final-research-project/blob/main/LDA/broadband_perceived_static_lda.png)
 **Observations:** Shifting the feature space to True Broadband Power (70-150 Hz), this static LDA plot evaluates decoding accuracy over the 100-400 ms window. Broadband power, which reflects asynchronous population firing, provides a more robust and stable feature space for classification. The degradation of accuracy from Low to High noise is smoother, suggesting that broadband activity captures a more integrated, recurrent level of perceptual processing compared to the transient ERP.
 
-![Broadband Perceived Time-Resolved LDA](/home/mamzi/Desktop/neuro-connect/cortious-team-final-research-project/LDA/broadband_perceived_time_resolved_lda.png)
+![Broadband Perceived Time-Resolved LDA](https://github.com/imMAMZI/cortious-team-final-research-project/blob/main/LDA/broadband_perceived_time_resolved_lda.png)
 **Observations:** The time-resolved broadband LDA shows a fundamentally different temporal profile than the raw voltage LDA. Instead of a sharp, transient peak, the Low Noise decoding accuracy rises at ~150 ms and remains sustained well beyond 400 ms. This sustained decoding accuracy supports the hypothesis that high-gamma broadband activity reflects continuous, recurrent cortico-cortical processing and active maintenance of the face percept, rather than a fleeting feed-forward trigger.
 
 ---
@@ -75,10 +75,10 @@ Cortical spectral dynamics offer distinct physiological windows into brain funct
 - **Beta (13–30 Hz):** Extracted via bandpass filtering, squared to obtain raw power, and subsequently smoothed with a 10 Hz low-pass filter to extract the slow power envelope.
 - **Statistical Testing:** A 2x3 Repeated-Measures ANOVA (Perception x NoiseLevel) was applied to the Area Under the Curve (AUC) of the High-Gamma power within the 200–600 ms window.
 
-![Grand Average High-Gamma](/home/mamzi/Desktop/neuro-connect/cortious-team-final-research-project/HighGamma-vs-Beta/grand-average-high-gamma-across-all-subjects.jpg)
+![Grand Average High-Gamma](https://github.com/imMAMZI/cortious-team-final-research-project/blob/main/HighGamma-vs-Beta/grand-average-high-gamma-across-all-subjects.jpg)
 **Observations:** This figure highlights the profound sensitivity of High-Gamma power to conscious perception. In the Low Noise bin, Perceived trials (blue) elicit a massive, sustained increase in High-Gamma power starting at ~200 ms and lasting until ~600 ms. Non-perceived trials (red) show a significantly blunted response. In the Medium Noise bin, the amplitude of the Perceived trials drops, but the divergence between Hit and Miss remains clear. In the High Noise bin, the signal fails to rise above baseline, confirming that High-Gamma power is an all-or-nothing index of successful face percept formation in the ventral temporal cortex.
 
-![Grand Average Beta](/home/mamzi/Desktop/neuro-connect/cortious-team-final-research-project/HighGamma-vs-Beta/grand-average-beta-dynamics-across-all-subjects.jpg)
+![Grand Average Beta](https://github.com/imMAMZI/cortious-team-final-research-project/blob/main/HighGamma-vs-Beta/grand-average-beta-dynamics-across-all-subjects.jpg)
 **Observations:** The Beta band dynamics present a striking contrast to High-Gamma. Instead of tracking successful perception with sustained power increases, Beta power exhibits a transient, sharp spike around 200-300 ms that is actually *higher* for Non-perceived trials (red) in the Low Noise condition. This suggests that Beta may reflect a synchronous inhibitory gating mechanism, prediction error, or a state of heightened effort/ambiguity when the visual system fails to resolve a clear percept despite low visual noise. It does not serve as a direct surrogate for active stimulus representation.
 
 ---
