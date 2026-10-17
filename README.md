@@ -133,3 +133,18 @@ The synthesis of our three analytical pillars provides a comprehensive view of h
 * **Amplitude Correlates with Perception (H1):** Both the ERP (N170) and High-Gamma broadband analyses confirm that neural response amplitude is significantly greater for perceived faces compared to non-perceived faces. The High-Gamma signal, in particular, acts as a sustained physiological signature of conscious percept formation.
 * **Latency and Temporal Dynamics (H2):** Time-resolved LDA and continuous spectral plots reveal that visual noise not only blunts amplitude but delays and smears the neural response. The sharp temporal precision of the ERP is lost as noise increases, reflecting slower, struggling neural processing.
 * **Complementary Decoding (H3):** The LDA classification proves that neural activity can distinguish perceived from non-perceived trials well above chance. Crucially, the transient nature of the ERP decoding (peaking sharply at 200 ms) versus the sustained nature of the Broadband decoding (100–400+ ms) proves that these two signals capture complementary physiological phenomena: the initial synchronized feed-forward visual evidence (ERP) and the subsequent asynchronous recurrent processing required for categorical assignment and conscious awareness (High-Gamma).
+
+---
+
+## Contact us on Linkedin!
+
+| Name                  | Linkedin                                                     |
+| --------------------- | ------------------------------------------------------------ |
+| Mohammadreza Khashei  | https://www.linkedin.com/in/immamziii/                       |
+| Sama Arjaneh          | https://www.linkedin.com/in/sama-arjeneh-7b680642a/          |
+| Negar Gorji           | https://www.linkedin.com/in/negar-k-gorji-777438248/         |
+| Mahtab Mohammadi      | https://www.linkedin.com/in/mahtab-mohammadii/               |
+| Sajedeh Saberi        | https://www.linkedin.com/in/sajedehsaberi/                   |
+| Monireh Falahat       | https://www.linkedin.com/in/monireh-falahat-924a62355/       |
+| Asal Shirvan          | -                                                            |
+| FatemeZahra Habibpour | https://www.linkedin.com/in/fatemezahra-habibpour-4b2b51431/ |
